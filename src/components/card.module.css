@@ -1,0 +1,148 @@
+.card {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: quicksand;
+}
+.card .blogTopTag {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.card .blogTopTagMobile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.card .user {
+  border: 1px solid #f5f5f5;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+.card .blogTopTag2 {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f5f5f5;
+  padding: 10px 0;
+}
+.card .blogName {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 26px;
+}
+.card .blogSource {
+  margin-left: auto;
+}
+.card p {
+  margin: 10px 0;
+}
+.card .blogTag {
+  background-color: #f5f5f5;
+  width: fit-content;
+  padding: 10px 30px;
+  border-radius: 50px;
+  margin-left: auto;
+}
+.card .blogdesc {
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 830px) {
+  .card .blogTopTag {
+    display: block;
+    gap: 0;
+  }
+  .card .blogName {
+    font-size: 22px;
+  }
+  .card .blogSource {
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  .card .blogSourceLink {
+    font-size: 12px;
+  }
+}
+
+/* ---------------------------INPUT COMPONENT------------------------------------------ */
+.container {
+  padding: 0 80px;
+}
+.head {
+  font-family: publica;
+  text-transform: capitalize;
+  font-size: 44px;
+}
+.inputdiv {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.label {
+  font-family: publica;
+  text-transform: capitalize;
+  font-size: 22px;
+  margin: 10px 0;
+  letter-spacing: 1px;
+}
+.input {
+  border: 1px solid #aaa;
+  padding: 15px 5px;
+  border-radius: 4px;
+  width: 50%;
+  margin-bottom: 20px;
+}
+.input::placeholder,
+.textarea::placeholder {
+  font-family: quicksand;
+  text-transform: capitalize;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+.textarea {
+  width: 50%;
+  border: 1px solid #aaa;
+  padding: 15px 5px;
+  border-radius: 4px;
+}
+.labeldetails {
+  font-family: quicksand;
+  text-transform: capitalize;
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.file {
+  width: 50%;
+  border: 1px dotted #aaa;
+  padding: 10px 5px;
+  height: 70px;
+  border-radius: 4px;
+  align-items: center;
+  margin: 10px 0;
+}
+.contributebtn {
+  background: #540c6f;
+  font-size: 22px;
+  font-family: publica;
+  padding: 15px 30px;
+  color: #fff;
+  border-radius: 50px;
+  margin: 30px 0 0 0;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 830px) {
+  .container {
+    padding: 0 10px;
+  }
+  .input,
+  .textarea {
+    width: 98%;
+    margin-bottom: 20px;
+  }
+  .labeldetails {
+    font-size: 14px;
+  }
+}
