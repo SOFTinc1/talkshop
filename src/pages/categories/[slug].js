@@ -13,14 +13,14 @@ function Category({ category }) {
   return (
     <div className={styles.categoryBlogPage}>
       <h1 className={styles.categoryBlogPageTitle}>Blog Posts</h1>
-     <div className={styles.categoryBlogPageGrid}>
-     {category.business.map((business) => (
-        <Card
-          business={business}
-          onClick={() => handleBusinessClick(business)}
-        />
-      ))}
-     </div>
+      <div className={styles.categoryBlogPageGrid}>
+        {category.business.map((business) => (
+          <div onClick={() => handleBusinessClick(business)}>
+            <Card business={business} />
+          </div>
+        ))}
+      </div>
+      
     </div>
   );
 }

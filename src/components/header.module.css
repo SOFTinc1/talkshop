@@ -6,7 +6,7 @@
   width: 100%;
   z-index: 999;
   margin: 0;
-  /* background: #fafafa; */
+  /* border-bottom: 1px solid #d8d8d8; */
 
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
@@ -14,14 +14,14 @@
 }
 .logo {
   font-family: publica;
-  font-size: 24px;
+  font-size: 28px;
   padding: 0;
   align-items: center;
   color: #540c6f;
   letter-spacing: 2px;
-  border: 1px solid #d8d8d8;
+  /* border: 1px solid #d8d8d8;
   padding: 15px 30px;
-  border-radius: 50px;
+  border-radius: 50px; */
 }
 .auth {
   display: flex;
@@ -30,48 +30,62 @@
   margin-left: auto;
   padding-right: 140px;
 }
-.btn1 {
-}
 .btn1Img {
   width: 25px;
   height: 25px;
-  padding: 15px;
-  /* background: #fff !important; */
-  /* border-radius: 50%; */
-  /* border: 1px solid #d8d8d8; */
+  padding: 10px;
+  background: #fff !important;
+  border-radius: 50%;
+  border: 1px solid #d8d8d8;
   margin-top: 5px;
+  cursor: pointer;
 }
 .btn2 {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 15px 30px;
-  /* background: #fff !important; */
-  /* border-radius: 50px; */
-  /* border: 1px solid #d8d8d8; */
+  padding: 10px 30px;
+  background: #fff !important;
+  border-radius: 50px;
+  border: 1px solid #d8d8d8;
   font-family: publica;
   font-size: 22px;
   color: #000;
+  cursor: pointer;
 }
 .btn2Img {
   width: 30px;
   height: 30px;
+}
+.btn3Signout {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: publica;
+  font-size: 22px;
+  color: #000;
+  cursor: pointer;
 }
 .btn3 {
   display: flex;
   align-items: center;
   gap: 10px;
   background: #540c6f !important;
-  padding: 20px 30px;
+  padding: 15px 30px;
   border-radius: 50px;
   font-family: publica;
   font-size: 22px;
   color: #fff;
   border: none;
+  cursor: pointer;
 }
-.btn3Img {
-  width: 30px;
-  height: 30px;
+.btnSignout {
+  text-transform: capitalize;
+}
+.btnSignout2 {
+  text-transform: capitalize;
+  font-size: 12px;
+  font-family: quicksand;
 }
 .btn4 {
   display: none;
@@ -80,15 +94,27 @@
   display: none;
 }
 .user {
-  width: 32px;
-  height: 32px;
-  background: #fff !important;
-  padding: 10px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #d8d8d8;
   border-radius: 50%;
-  margin-top: 10px;
+  padding: 10px;
+  background: #fff !important;
+}
+.btn3SignoutMobile {
+  display: none;
 }
 
 @media screen and (max-width: 830px) {
+  .btn3SignoutMobile {
+    display: block;
+    font-family: publica;
+    font-size: 22px;
+    text-transform: capitalize;
+  }
+  .btn3Signout {
+    display: none;
+  }
   .container {
     width: 100%;
     padding: 10px;
@@ -108,7 +134,7 @@
     width: 25px;
     height: 25px;
     padding: 10px;
-    /* border: 1px solid #d8d8d8; */
+    border: 1px solid #d8d8d8;
     background: #fff !important;
     border-radius: 50%;
   }
@@ -128,7 +154,7 @@
     padding: 10px;
     border-radius: 50%;
     margin-top: 5px;
-    /* border: 1px solid #d8d8d8; */
+    border: 1px solid #d8d8d8;
   }
   .btn5 {
     display: block;

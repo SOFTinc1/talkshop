@@ -1,6 +1,38 @@
 .main {
-  padding: 20px 80px 80px 80px;
+  padding: 10px 0 0 0;
+  /* padding: 20px 80px 80px 80px; */
 }
 .contribute {
   padding: 100px 0 0 0;
+}
+.categoryDiv {
+  width: 100%;
+  overflow-x: hidden;
+  padding: 100px 0 0 0;
+}
+.categoryDivInner {
+  overflow-x: scroll;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  padding: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.categoryDivInner::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.categoryCard {
+  background-color: #f5f5f5;
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+.categoryDivTitle {
+  font-family: quicksand;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
 }

@@ -9,7 +9,7 @@ function Banner(props) {
     <div className={styles.container}>
       <div className={styles.top}>
         <h1 className={styles.h1bold}>
-         the premier <span>gossip</span>
+         the premier <span>blog</span>
         </h1>
         <h1 className={styles.h1normal}>station with friends.</h1>
         <p className={styles.details}>

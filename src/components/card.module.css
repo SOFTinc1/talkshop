@@ -1,8 +1,10 @@
 .card {
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 10px 20px;
   border-radius: 4px;
   font-family: quicksand;
+  cursor: pointer;
+  border: 1px solid #d8d8d8;
 }
 .card .blogTopTag {
   display: flex;
@@ -64,6 +66,119 @@
   .card .blogSourceLink {
     font-size: 12px;
   }
+}
+
+/* --------------------------BUSINESS PAGE----------------------------------- */
+.Businesscontainer {
+  padding: 130px 80px 80px 80px;
+}
+.Businesscard {
+  border: 1px solid #e6e6e6;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-family: quicksand;
+}
+.BusinessTag {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.BusinessTagMobile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.user {
+  border: 1px solid #f5f5f5;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+}
+.BusinessTopTag2 {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 10px 0;
+}
+.BusinessName {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 26px;
+}
+.BusinessSource {
+  margin-left: auto !important;
+}
+.Businesscontainer p {
+  margin: 10px 0;
+}
+.BusinessTagBor {
+  background-color: #f5f5f5;
+  width: fit-content;
+  padding: 10px 30px;
+  border-radius: 50px;
+  margin-left: auto !important;
+}
+.Businessdesc {
+  padding: 20px 0;
+}
+.BusinessCommentHead {
+  font-size: 22px;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+.BusinessCommentInner {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.BusinessCommentText {
+  font-size: 18px;
+  text-transform: capitalize;
+  border: 1px solid #e2e2e2;
+  padding: 10px;
+  border-radius: 50px;
+  width: 100%;
+}
+.BusinessBottom {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 40px 0;
+}
+.BusinessBottomForm {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+.BusinessBottomFormInput {
+  width: 100%;
+  border: 1px solid #dadada;
+  padding: 15px;
+  border-radius: 50px;
+  outline: none;
+  font-family: quicksand;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.BusinessBottomFormInput::placeholder {
+  font-family: quicksand;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+.commentButton {
+  background: #540c6f;
+  padding: 10px 30px;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  font-family: quicksand;
+  text-transform: capitalize;
+  font-size: 16px;
+  cursor: pointer;
+  /* margin-left: auto !important; */
 }
 
 /* ---------------------------INPUT COMPONENT------------------------------------------ */

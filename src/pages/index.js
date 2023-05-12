@@ -1,10 +1,12 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Banner from "@/components/banner";
-import { Grid, Card, CardHeader, Avatar } from "@mui/material";
-import axios from 'axios';
+import axios from "axios";
+import { useRouter } from "next/router";
 
 export default function Home({ categories }) {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -14,21 +16,19 @@ export default function Home({ categories }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <div className={styles.categoryDiv}>
+          <div className={styles.categoryDivInner}>
+            {categories.map((category) => (
+              <div
+                className={styles.categoryCard}
+                onClick={() => router.push(`/categories/${category.slug}`)}
+              >
+                <h1 className={styles.categoryDivTitle}>{category.name}</h1>
+              </div>
+            ))}
+          </div>
+        </div>
         <Banner />
-
-        <Grid container spacing={4}>
-          {categories.map((category) => (
-            <Grid item xs={12} md={3}>
-              <Card>
-                <CardHeader
-                  avatar={<Avatar aria-label="category">C</Avatar>}
-                  title={category.name}
-                  subheader={`See all ${category.name} business`}
-                />
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
       </main>
     </>
   );

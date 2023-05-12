@@ -19,6 +19,70 @@
   grid-template-columns: 1fr 1fr;
 }
 
+/* ---------------------LOGIN PAGE----------------------------*/
+.LoginContainer {
+  padding: 110px 0 80px 0;
+  margin: 0 auto;
+  width: 30%;
+}
+.LoginHead {
+  font-family: publica;
+  font-size: 42px;
+  text-transform: capitalize;
+  margin: 20px 0 10px 0;
+}
+.LoginHeadDetails {
+  font-family: quicksand;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 10px 0 30px 0;
+}
+.Loginform {
+  display: flex;
+  flex-direction: column;
+}
+.LoginLabel {
+  font-family: quicksand;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 0 0 10px 0; 
+}
+.LoginInput {
+  padding: 10px 15px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  outline: none;
+  font-family: quicksand;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 0 0 20px 0; 
+}
+.LoginButton {
+  width: fit-content;
+  background: #540c6f;
+  color: #fff;
+  font-family: quicksand;
+  font-size: 18px;
+  text-transform: capitalize;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  margin-left: auto;
+  cursor: pointer;
+}
+.LoginOption {
+  font-family: quicksand;
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-top: 20px;
+  text-align: center;
+} 
+.LoginOptionLink {
+  color: rgb(58, 58, 241);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 830px) {
   .categoryBlogPage {
     padding-top: 80px;
